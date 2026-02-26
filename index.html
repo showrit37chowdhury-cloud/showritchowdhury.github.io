@@ -14,29 +14,39 @@
             font-family: 'Segoe UI', Arial, sans-serif;
         }
 
-        /* Updated Banner Styling: Set a max-height so it doesn't take the whole screen */
+        /* Banner Styling */
         .banner-container {
             width: 100%;
-            max-height: 400px; /* Limits the height of the banner */
-            overflow: hidden;   /* Ensures the image stays within the container */
+            /* Removed max-height to allow it to scale naturally on mobile */
+            overflow: hidden;   
             display: flex;
             align-items: center;
             justify-content: center;
+            background-color: #000; /* Keeps background black if image is small */
         }
 
         .banner-container img {
             width: 100%;
             height: auto;
-            object-fit: cover; /* Keeps image looking good while resizing */
+            display: block;
+            /* Desktop default: cover looks good on wide screens */
+            object-fit: cover; 
+        }
+
+        /* --- THE FIX FOR MOBILE --- */
+        @media (max-width: 768px) {
+            .banner-container img {
+                /* 'contain' ensures the WHOLE image is visible without cropping */
+                object-fit: contain; 
+            }
         }
 
         /* Content section below the banner */
         .content {
-            padding: 40px 20px;
+            padding: 20px; /* Reduced padding for mobile friendliness */
             max-width: 800px;
             margin: 0 auto;
             text-align: left;
-            /* Changed text color to Orange */
             color: #FFA500; 
         }
 
@@ -44,7 +54,6 @@
             font-size: 28px;
             font-weight: bold;
             margin-bottom: 15px;
-            /* Heading color in Orange */
             color: #FFA500; 
         }
 
