@@ -1,23 +1,67 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Showrit's World</title>
+    <title>Showrit Chowdhury</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; line-height: 1.6; color: #333; }
-        header { background: #2c3e50; color: white; padding: 2rem; text-align: center; }
-        section { padding: 2rem; max-width: 800px; margin: auto; }
-        .feature-box { border-left: 5px solid #3498db; background: #f9f9f9; padding: 15px; margin: 20px 0; }
-        footer { text-align: center; padding: 2rem; background: #eee; font-size: 0.8rem; }
+        /* Body background set to black as requested */
+        body { 
+            font-family: 'Segoe UI', sans-serif; 
+            margin: 0; 
+            line-height: 1.6; 
+            color: white; 
+            background-color: #000000; 
+        }
+
+        /* Banner section replacing the blue header */
+        .banner {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Profile picture styling */
+        .profile-container {
+            text-align: center;
+            margin-top: -75px; /* Pulls photo up slightly into the banner area */
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #000;
+            object-fit: cover;
+        }
+
+        section { 
+            padding: 3rem 2rem; 
+            max-width: 800px; 
+            margin: auto; 
+            text-align: center;
+        }
+
+        .feature-box { 
+            border-left: 5px solid #ff9900; 
+            background: #1a1a1a; 
+            padding: 20px; 
+            margin: 20px 0; 
+            text-align: left;
+        }
+
+        h2, h3 { color: #ff9900; }
+        p { color: #cccccc; }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Showrit Chowdhury</h1>
-        <p>Tech Enthusiast | Creator | Developer</p>
-    </header>
+    <img src="banner.jpg" alt="Showrit Chowdhury Banner" class="banner">
+
+    <div class="profile-container">
+        <img src="profile.jpg" alt="Showrit" class="profile-pic">
+    </div>
 
     <section>
         <h2>About Me</h2>
@@ -29,9 +73,5 @@
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Showrit Chowdhury. Built with Gemini's help.</p>
-    </footer>
-
-</body>
+    </body>
 </html>
