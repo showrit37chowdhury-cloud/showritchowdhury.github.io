@@ -1,95 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Showrit Chowdhury | Official Website</title>
-    <meta name="description" content="Official website of Showrit Chowdhury. Tech enthusiast and creator.">
-    <meta name="keywords" content="Showrit Chowdhury, Showrit, Chowdhury, GitHub">
-    <meta name="google-site-verification" content="mfEvciFMfuyRpVcblnMYdUuQNvoOVRrF_16FQxrxIuM" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Base Reset */
-        body, html {
-            margin: 0;
-            padding: 0;
-            background-color: #000000; 
-            color: #ffffff; 
-            font-family: 'Segoe UI', Arial, sans-serif;
-        }
+    <title>Showrit Chowdhury | Official Website</title>
+    <meta name="description" content="Official website of Showrit Chowdhury. Tech enthusiast and creator.">
+    <meta name="keywords" content="Showrit Chowdhury, Showrit, Chowdhury, GitHub">
+    <meta name="google-site-verification" content="mfEvciFMfuyRpVcblnMYdUuQNvoOVRrF_16FQxrxIuM" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Base Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: #000000; /* Pure Black Background */
+            color: #FFA500;            /* Bright Orange Text */
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
 
-        /* Banner Styling */
-        .banner-container {
-            width: 100%;
-            /* Removed max-height to allow it to scale naturally on mobile */
-            overflow: hidden;   
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #000; /* Keeps background black if image is small */
-        }
+        /* Banner Styling - Anchored to Top */
+        .banner-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000; 
+        }
 
-        .banner-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-            /* Desktop default: cover looks good on wide screens */
-            object-fit: cover; 
-        }
+        .banner-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover; 
+        }
 
-        /* --- THE FIX FOR MOBILE --- */
-        @media (max-width: 768px) {
-            .banner-container img {
-                /* 'contain' ensures the WHOLE image is visible without cropping */
-                object-fit: contain; 
-            }
-        }
+        /* Mobile adjustment for banner visibility */
+        @media (max-width: 768px) {
+            .banner-container img {
+                object-fit: contain; 
+            }
+        }
 
-        /* Content section below the banner */
-        .content {
-            padding: 20px; /* Reduced padding for mobile friendliness */
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: left;
-            color: #FFA500; 
-        }
+        /* Content section below the banner */
+        .content {
+            padding: 40px 20px; 
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
 
-        .about-title {
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: #FFA500; 
-        }
+        .about-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #FFA500; /* Ensuring Title is Orange */
+        }
 
-        .mission-box {
-            border-left: 4px solid #007bff; 
-            padding-left: 20px;
-            margin-top: 40px;
-        }
+        /* Mission Box Styling */
+        .mission-box {
+            border-left: 4px solid #FFA500; /* Changed border to Orange to match theme */
+            padding-left: 20px;
+            margin-top: 40px;
+        }
 
-        footer {
-            text-align: center;
-            padding: 50px 0;
-            font-size: 14px;
-            color: #777;
-        }
-    </style>
+        h3 {
+            color: #FFA500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px 0;
+            font-size: 14px;
+            color: #555; /* Subtle grey for footer */
+        }
+    </style>
 </head>
 <body>
 
-    <div class="banner-container">
-        <img src="banner.jpeg" alt="Showrit Chowdhury Banner">
-    </div>
+    <div class="banner-container">
+        <img src="banner.jpeg" alt="Showrit Chowdhury Banner">
+    </div>
 
-    <div class="content">
-        <div class="about-me">
-            <h2 class="about-title">About Me</h2>
-            <p>I've officially launched my first website on GitHub! This is just the beginning of my journey.</p>
-        </div>
+    <div class="content">
+        <section class="about-me">
+            <h2 class="about-title">About Me</h2>
+            <p>I've officially launched my first website on GitHub! This is just the beginning of my journey.</p>
+        </section>
 
-        <div class="mission-box">
-            <h3>My Mission</h3>
-            <p>I am building this space to share my projects and ideas with the world.</p>
-        </div>
-    </div>
+        <section class="mission-box">
+            <h3>My Mission</h3>
+            <p>I am building this space to share my projects and ideas with the world.</p>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2026 Showrit Chowdhury. All rights reserved.
+    </footer>
+
 </body>
 </html>
